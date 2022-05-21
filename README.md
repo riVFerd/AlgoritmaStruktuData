@@ -1,6 +1,6 @@
 ## Notes
 
-Project yang menyimpan semua kode tugas praktikum Algoritma & Struktur Data dari Virgy Ferdian S. F. (2141720116)
+Project yang menyimpan semua kode tugas praktikum Algoritma & Struktur Data dari Virgy Ferdian
 
 
 ## Folder Structure

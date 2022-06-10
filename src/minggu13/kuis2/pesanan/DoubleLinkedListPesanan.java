@@ -79,15 +79,17 @@ public class DoubleLinkedListPesanan {
             int i = 0;
             while (i < size) {
                 int j = 0;
-                while (j < size) {
-                    if (current.next != null) {
-                        if (current.data.namaPesanan.charAt(0) < current.next.data.namaPesanan.charAt(0)) {
+                while (j < size - 1) {
+                    int shortest = (current.data.namaPesanan.length() < current.next.data.namaPesanan.length()) ? current.data.namaPesanan.length() : current.next.data.namaPesanan.length();
+                    for (int k = 0; k < shortest; k++) {
+                        if (current.data.namaPesanan.charAt(k) < current.next.data.namaPesanan.charAt(k)) {
                             Pesanan_29 temp = current.data;
                             current.data = current.next.data;
                             current.next.data = temp;
+                            break;
                         }
                     }
-                    if (current.next != null) current = current.next;
+                    current = current.next;
                     j++;
                 }
                 current = head;
